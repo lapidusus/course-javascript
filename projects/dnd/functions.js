@@ -84,6 +84,7 @@ function once(target, fn) {
       fn();
       already = true;
     }
+  target.removeEventListener('click');  
   });
 }
 
